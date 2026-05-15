@@ -24,3 +24,28 @@ class MathFunctions {
 const myCalculator = new MathFunctions(10, 5);
 
 console.log(myCalculator.add());
+
+class Greetings {
+  constructor(name) {
+    this.name = name;
+  }
+
+  english() {
+    return `Hello, ${this.name}!`;
+  }
+
+  spanish() {
+    return `¡Hola, ${this.name}!`;
+  }
+
+  french() {
+    return `Bonjour, ${this.name}!`;
+  }
+
+  arabic() {
+    return `Marhaba, ${this.name}!`;
+  }
+}
+
+const userGreeting = new Greetings("LeBron");
+console.log(userGreeting.english());
